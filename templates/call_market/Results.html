@@ -1,0 +1,15 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Trading Results
+{% endblock %}
+
+{% block content %}
+
+    After all trades have been processed, you have {{player.cash}} and {{player.stock}} in stock
+
+    {% next_button %}
+{% endblock %}
+
+

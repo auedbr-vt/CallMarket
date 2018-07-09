@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load static otree %}
+
+{% block title %}
+    Enter your bids to buy and offers to sell
+{% endblock %}
+
+{% block content %}
+
+    Please enter the following information. You currently have {{player.cash}} and {{player.stock}} stocks
+
+    {% formfield player.bidp %}
+
+    {% formfield player.bidq %}
+
+    {% formfield player.askp %}
+
+    {% formfield player.askq %}
+
+    {% next_button %}
+
+{% endblock %}
